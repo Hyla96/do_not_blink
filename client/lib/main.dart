@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     return Container();
                   }
                   return Text(
-                    'You ${snapshot.data} messages via port ${util.port}',
+                    'You sent ${snapshot.data} messages via port ${util.port}',
                   );
                 }),
           ],

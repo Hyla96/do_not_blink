@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/../client/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../client/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/lib/udp_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../client/lib/udp_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/macos/Runner/DebugProfile.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/../client/macos/Runner/DebugProfile.entitlements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../client/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
