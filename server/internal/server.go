@@ -51,7 +51,7 @@ func startUDPListener() {
 		// Broadcast message to all connected clients
 		go func() {
 			remoteConns.Range(func(key, value interface{}) bool {
-				if _, err := conn.WriteTo(buf, *value.(*net.Addr)); err != nil {
+				if _, err := conn.WriteTo(buf[:n], *value.(*net.Addr)); err != nil {
 					remoteConns.Delete(key)
 
 					return true

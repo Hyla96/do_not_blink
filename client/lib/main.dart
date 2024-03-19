@@ -38,13 +38,20 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You send an UDP message by pushing the button',
-            ),
+            StreamBuilder(
+                stream: util.messagesCount.stream,
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return Container();
+                  }
+                  return Text(
+                    'You ${snapshot.data} messages via port ${util.port}',
+                  );
+                }),
           ],
         ),
       ),
